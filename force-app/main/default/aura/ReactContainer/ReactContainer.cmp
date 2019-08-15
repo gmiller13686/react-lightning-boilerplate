@@ -8,8 +8,10 @@
             onerror="{!c.handleError}"/>
 
     </lightning:card>
-    <lightning:card title="Message Output">
-        {!v.message}
+        <lightning:card title="Your Lightning Component">
+        <p>Send Messages to Our ReactComponent</p>
+        <lightning:input name="message" label="Enter some text" value="{!v.message}"/>
+        <lightning:button variant="brand" label="Send" title="Send action" onclick="{! c.handleSendClick }" />
     </lightning:card>
     
 </aura:component>
